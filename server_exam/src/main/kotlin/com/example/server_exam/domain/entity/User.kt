@@ -1,9 +1,11 @@
 package com.example.server_exam.domain.entity
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import javax.persistence.*
 
 @Entity
 data class User(
+    @JsonIgnore
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val uId: Long?,
