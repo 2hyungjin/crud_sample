@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service
 
 @Service
 interface AccountService {
-    fun save(registerDto: RegisterDto): BasicResponse
+    fun register(registerDto: RegisterDto): BasicResponse
+    fun checkId(id:String):BasicResponse
     fun login(loginDto: LoginDto): BasicResponse
+
 }
