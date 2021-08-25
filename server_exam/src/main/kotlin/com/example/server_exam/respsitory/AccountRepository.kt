@@ -7,5 +7,4 @@ import org.springframework.stereotype.Repository
 @Repository
 interface AccountRepository : JpaRepository<User, Long> {
     fun findById(id: String): User?
-    fun findByIdIsNull(id:String): Boolean
 }
