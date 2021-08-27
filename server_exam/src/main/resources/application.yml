@@ -13,7 +13,4 @@ spring:
     hibernate:
       format_sql: true
       ddl-auto: create
-jwt:
-  header: Authorization
-  secret: dazai5samu
 
